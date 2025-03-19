@@ -1,43 +1,42 @@
-Virtual Mouse Using Hand Tracking
+# Virtual Mouse Using Hand Tracking
 
 This project implements a virtual mouse using OpenCV, MediaPipe, and PyAutoGUI. It enables users to control the mouse cursor using hand gestures, perform left clicks, and right clicks using finger movements.
 
-Features
+## Features
+- Tracks hand movements using MediaPipe's Hand Tracking solution.
+- Moves the mouse cursor smoothly based on index finger position.
+- Performs left-click when the thumb and index finger touch.
+- Performs right-click when the index and middle fingers touch.
+- Includes a cooldown mechanism to prevent accidental clicks.
 
-Tracks hand movements using MediaPipe's Hand Tracking solution.
-
-Moves the mouse cursor smoothly based on index finger position.
-
-Performs left-click when the thumb and index finger touch.
-
-Performs right-click when the index and middle fingers touch.
-
-Includes a cooldown mechanism to prevent accidental clicks.
-
-Requirements
-
+## Requirements
+```html
 pip install opencv-python mediapipe pyautogui numpy
+```
 
-How to Run
-
-Clone this repository:
-
+## How to Run
+1. Clone this repository:
+```html
 git clone https://github.com/your-username/your-repository.git
-
-Navigate to the project directory:
-
+```
+2. Navigate to the project directory:
+```html
 cd your-repository
-
-Run the script:
-
+```
+3. Run the script:
+```html
 python virtual_mouse.py
+```
 
-Usage
+## Usage
+- Move your index finger to control the cursor.
+- Pinch your thumb and index finger together to perform a left-click.
+- Pinch your index and middle fingers together to perform a right-click.
+- Press `q` to exit the program.
 
-Move your index finger to control the cursor.
+## Troubleshooting
+- Ensure your webcam is functioning properly.
+- Adjust the detection confidence if hand tracking is inaccurate.
+- Run the script in a well-lit environment for better detection.
 
-Pinch your thumb and index finger together to perform a left-click.
 
-Pinch your index and middle fingers together to perform a right-click.
-
-Press q to exit the program.
